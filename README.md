@@ -2,11 +2,14 @@
 
 FAS method for identification of molecular Fragments associated with a particular toxicity class.
 Requirements:
+
 1) Plink software (https://www.cog-genomics.org/plink2)
+
 2) Openbabel (http://openbabel.org/wiki/Main_Page)
+
 3) Java
 
-The dataset "dataset_MUTA_KNN" is a test set provided here.
+The dataset "dataset_MUTA_KNN" is a test set provided here. 
 
 Commands:
 
