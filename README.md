@@ -1,4 +1,4 @@
-# FAS (Fragments association study)
+# FAS (a tool for Fragments association studies)
 
 FAS method for identification of molecular Fragments associated with a particular toxicity class.
 Requirements:
