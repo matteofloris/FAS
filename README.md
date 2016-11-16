@@ -25,8 +25,12 @@ The dataset "dataset_MUTA_KNN" is a test set provided here.
 ### extract from SDF file a list of fragments identified in each molecule
 > java -jar PubChemFragmenter.jar ${ROOT}.sdf > ${ROOT}.pcfrags
 
+in this example, the PubChem Fragments (structural keys) are identified
+
 ### prepare input files for association study
 > python preprocess_pchem_quantitative.py $ROOT
+
+plink is a fast tool commonly used in genetics for GWAS analyses; here we adapt the informations about our molecules (for each molecule, the list of its fragments and the toxicity label) in order to perform a rapid chi-square test and obtain a pvalue for each fragment.
 
 ### perform the association study
 > plink --file ${ROOT} --assoc --no-parents --allow-no-sex --no-fid --out ${ROOT} --adjust
